@@ -1,0 +1,20 @@
+{
+  "model": "random_forest",
+  "unit": "probability",
+  "n_test_samples": 61,
+  "mean_abs_shap": {
+    "cp": 0.09653,
+    "thal": 0.08296,
+    "exang": 0.06343,
+    "ca": 0.0607,
+    "slope": 0.03423,
+    "thalach": 0.0333,
+    "oldpeak": 0.03163,
+    "sex": 0.01806,
+    "age": 0.01231,
+    "trestbps": 0.00986,
+    "chol": 0.00939,
+    "restecg": 0.00484,
+    "fbs": 0.00041
+  }
+}

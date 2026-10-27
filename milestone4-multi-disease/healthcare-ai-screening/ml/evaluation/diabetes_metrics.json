@@ -1,0 +1,220 @@
+{
+  "module": "diabetes",
+  "data_report": {
+    "rows": 768,
+    "features": 8,
+    "missing_values_by_column": {
+      "glucose": 5,
+      "blood_pressure": 35,
+      "skin_thickness": 227,
+      "insulin": 374,
+      "bmi": 11
+    },
+    "duplicate_rows": 0,
+    "class_counts": {
+      "negative": 500,
+      "diabetes": 268
+    },
+    "positive_fraction": 0.349
+  },
+  "split": {
+    "train": 460,
+    "val": 154,
+    "test": 154
+  },
+  "test_positives": 54,
+  "selected_model": "random_forest",
+  "threshold": 0.5,
+  "validation": {
+    "logistic_regression": {
+      "accuracy": 0.7987012987012987,
+      "precision": 0.7804878048780488,
+      "recall_sensitivity": 0.5925925925925926,
+      "specificity": 0.91,
+      "f1": 0.6736842105263158,
+      "roc_auc": 0.8562962962962963,
+      "brier_score": 0.14515895045732358,
+      "ece_10bin": 0.06874048529311463,
+      "confusion_matrix": {
+        "tn": 91,
+        "fp": 9,
+        "fn": 22,
+        "tp": 32
+      },
+      "best_params": {
+        "clf__C": 0.1
+      },
+      "cv_roc_auc_train_folds": 0.8341
+    },
+    "random_forest": {
+      "accuracy": 0.7857142857142857,
+      "precision": 0.7441860465116279,
+      "recall_sensitivity": 0.5925925925925926,
+      "specificity": 0.89,
+      "f1": 0.6597938144329897,
+      "roc_auc": 0.8737037037037036,
+      "brier_score": 0.14382630605697286,
+      "ece_10bin": 0.11194572954829281,
+      "confusion_matrix": {
+        "tn": 89,
+        "fp": 11,
+        "fn": 22,
+        "tp": 32
+      },
+      "best_params": {
+        "clf__max_depth": 5,
+        "clf__min_samples_leaf": 3,
+        "clf__n_estimators": 400
+      },
+      "cv_roc_auc_train_folds": 0.8257
+    },
+    "xgboost": {
+      "accuracy": 0.7792207792207793,
+      "precision": 0.7380952380952381,
+      "recall_sensitivity": 0.5740740740740741,
+      "specificity": 0.89,
+      "f1": 0.6458333333333334,
+      "roc_auc": 0.8639814814814815,
+      "brier_score": 0.14084582030773163,
+      "ece_10bin": 0.07131981951269238,
+      "confusion_matrix": {
+        "tn": 89,
+        "fp": 11,
+        "fn": 23,
+        "tp": 31
+      },
+      "best_params": {
+        "clf__learning_rate": 0.1,
+        "clf__max_depth": 2,
+        "clf__n_estimators": 100
+      },
+      "cv_roc_auc_train_folds": 0.8205
+    }
+  },
+  "test": {
+    "logistic_regression": {
+      "accuracy": 0.7077922077922078,
+      "precision": 0.6046511627906976,
+      "recall_sensitivity": 0.48148148148148145,
+      "specificity": 0.83,
+      "f1": 0.5360824742268041,
+      "roc_auc": 0.8148148148148149,
+      "brier_score": 0.17240308983977906,
+      "ece_10bin": 0.09110311677715785,
+      "confusion_matrix": {
+        "tn": 83,
+        "fp": 17,
+        "fn": 28,
+        "tp": 26
+      }
+    },
+    "random_forest": {
+      "accuracy": 0.7402597402597403,
+      "precision": 0.6590909090909091,
+      "recall_sensitivity": 0.5370370370370371,
+      "specificity": 0.85,
+      "f1": 0.5918367346938775,
+      "roc_auc": 0.8140740740740741,
+      "brier_score": 0.16816962571320604,
+      "ece_10bin": 0.047581484654669076,
+      "confusion_matrix": {
+        "tn": 85,
+        "fp": 15,
+        "fn": 25,
+        "tp": 29
+      }
+    },
+    "xgboost": {
+      "accuracy": 0.7272727272727273,
+      "precision": 0.6363636363636364,
+      "recall_sensitivity": 0.5185185185185185,
+      "specificity": 0.84,
+      "f1": 0.5714285714285714,
+      "roc_auc": 0.822037037037037,
+      "brier_score": 0.16615194082260132,
+      "ece_10bin": 0.10560518208068687,
+      "confusion_matrix": {
+        "tn": 84,
+        "fp": 16,
+        "fn": 26,
+        "tp": 28
+      }
+    }
+  },
+  "repeated_cv_train_plus_val": {
+    "logistic_regression": {
+      "roc_auc": {
+        "mean": 0.8419,
+        "std": 0.0263
+      },
+      "recall": {
+        "mean": 0.5701,
+        "std": 0.0773
+      },
+      "specificity": {
+        "mean": 0.8958,
+        "std": 0.0364
+      },
+      "accuracy": {
+        "mean": 0.7823,
+        "std": 0.0267
+      }
+    },
+    "random_forest": {
+      "roc_auc": {
+        "mean": 0.8338,
+        "std": 0.0348
+      },
+      "recall": {
+        "mean": 0.5515,
+        "std": 0.0781
+      },
+      "specificity": {
+        "mean": 0.8783,
+        "std": 0.0346
+      },
+      "accuracy": {
+        "mean": 0.7644,
+        "std": 0.0341
+      }
+    },
+    "xgboost": {
+      "roc_auc": {
+        "mean": 0.8257,
+        "std": 0.0341
+      },
+      "recall": {
+        "mean": 0.5762,
+        "std": 0.0823
+      },
+      "specificity": {
+        "mean": 0.8508,
+        "std": 0.0437
+      },
+      "accuracy": {
+        "mean": 0.7551,
+        "std": 0.0391
+      }
+    }
+  },
+  "high_sensitivity_operating_point": {
+    "threshold": 0.2748,
+    "chosen_on": "validation set, first threshold with sensitivity >= 0.90",
+    "test": {
+      "accuracy": 0.7012987012987013,
+      "precision": 0.5476190476190477,
+      "recall_sensitivity": 0.8518518518518519,
+      "specificity": 0.62,
+      "f1": 0.6666666666666666,
+      "roc_auc": 0.8140740740740741,
+      "brier_score": 0.16816962571320604,
+      "ece_10bin": 0.047581484654669076,
+      "confusion_matrix": {
+        "tn": 62,
+        "fp": 38,
+        "fn": 8,
+        "tp": 46
+      }
+    }
+  }
+}

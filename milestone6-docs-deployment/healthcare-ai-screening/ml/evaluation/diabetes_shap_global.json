@@ -1,0 +1,15 @@
+{
+  "model": "random_forest",
+  "unit": "probability",
+  "n_test_samples": 154,
+  "mean_abs_shap": {
+    "glucose": 0.12492,
+    "bmi": 0.05987,
+    "age": 0.04675,
+    "diabetes_pedigree": 0.03428,
+    "insulin": 0.0242,
+    "pregnancies": 0.02189,
+    "skin_thickness": 0.01234,
+    "blood_pressure": 0.00654
+  }
+}

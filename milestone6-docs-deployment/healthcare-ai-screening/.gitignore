@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+node_modules/
+frontend/dist/
+*.db
+ml/models/*.joblib
+ml/models/*.pt
+ml/data/*.csv
+ml/data/images/
